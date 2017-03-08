@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="js/rc_vid_sphere.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sphere position="0.0 1.5 -2.0" color="#000000" radius="0.2" rcvidsphere="vid: pano0"></a-sphere>
+      <a-sphere position="0.0 1.5 2.0" color="#AAFFFF" radius="0.2" rcvidsphere="vid: pano1"></a-sphere>
+      <a-sky id="blank_sky" color="#FFFFFF"></a-sky>
+      <a-sky id="pano0" class="togglesky" src="videos/shotaing_stars.mp4" visible="false"></a-sky>
+      <a-sky id="pano1" class="togglesky" src="images/pano_small.jpg" visible="false"></a-sky>
+    </a-scene>
+  </body>
+</html>
